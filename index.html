@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE JAVASCRIPT</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="response.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1 class="header-logo"><a href="#">THE JavaScript</a></h1>
+        <button class="hum">
+          <span class="hum-line"></span>
+          <span class="hum-line"></span>
+          <span class="hum-line"></span>
+          <span class="hum-guide">open</span>
+        </button>
+      </div>
+      <div class="header-nav">
+        <a class="nav-menu" href="#read-me">READ ME</a>
+        <a class="nav-menu" href="#the-icon">THE ICON</a>
+        <a class="nav-menu" href="#the-scroll">THE SCROLL</a>
+        <a class="nav-menu" href="#the-carousel">THE CAROUSEL</a>
+        <a class="nav-menu" href="#the-application">THE APPLICATION</a>
+        <a class="nav-menu" href="#the-api">THE API</a>
+      </div>
+    </header>
+    <main>
+      <section id="read-me">
+        <h2 class="rm-headline">READ ME</h2>
+        <p class="rm-description">
+          このサイトはJavaScriptを”作りながら学ぶ”ために作成したサイトです。<br>
+          JavaScriptの機能を使うためのサイト構築をしており各機能はES
+          Modulesを用いて分割しています。<br>
+          また各sectionの最後にGitHub REST APIで取得したsourcecodeを載せています。<br>
+          サイト内にちりばめたJSの機能を体感して楽しんでください!
+        </p>
+      </section>
+      <div class="source-code">
+        <p class="code-headline">HamburgerMenu SourceCode</p>
+        <p class="code-caption">HTML</p>
+        <pre class="language-html"><code id="hum-html"></code></pre>
+        <p class="code-caption">CSS</p>
+        <pre class="language-css"><code id="hum-css"></code></pre>
+        <p class="code-caption">JavaScript</p>
+        <pre class="language-javascript"><code id="hum-js"></code></pre>
+      </div>
+      <section id="the-icon">
+        <h2 class="icon-headline">THE ICON</h2>
+        <img class="icon-img" src="./public/js.png" alt="" />
+        <p class="icon-description"></p>
+        <div class="button">
+          <button class="btn-text">Text!</button>
+          <button class="btn-color">Color!</button>
+          <button class="btn-big">Big!</button>
+          <button class="btn-small">Small!</button>
+          <button class="btn-rotate">Rotate!</button>
+        </div>
+      </section>
+      <div class="source-code">
+        <p class="code-headline">SourceCode</p>
+        <p class="code-caption">HTML</p>
+        <pre class="language-html"><code id="icon-html"></code></pre>
+        <p class="code-caption">CSS</p>
+        <pre class="language-css"><code id="icon-css"></code></pre>
+        <p class="code-caption">JavaScript</p>
+        <pre class="language-javascript"><code id="icon-js"></code></pre>
+      </div>
+      <section id="the-scroll">
+        <div class="scroll-caption">
+          <h2 class="scroll-headline">THE SCROLL</h2>
+          <div class="flicker">
+            <span></span><span></span> <span></span><span></span> <span></span><span></span>
+          </div>
+        </div>
+        <video class="background-video" src="./public/47802-451812879_small.mp4" autoplay muted playsinline
+          loop></video>
+        <div class="text-space">
+          <div class="space"></div>
+          <div class="scroll-inner">
+            <p class="inner-text one">For left</p>
+          </div>
+          <div class="scroll-inner">
+            <p class="inner-text two">For right</p>
+          </div>
+          <div class="scroll-inner">
+            <p class="inner-text three">Fade in</p>
+          </div>
+        </div>
+      </section>
+      <div class="source-code">
+        <p class="code-headline">SourceCode</p>
+        <p class="code-caption">HTML</p>
+        <pre class="language-html"><code id="scroll-html"></code></pre>
+        <p class="code-caption">CSS</p>
+        <pre class="language-css"><code id="scroll-css"></code></pre>
+        <p class="code-caption">JavaScript</p>
+        <pre class="language-javascript"><code id="scroll-js"></code></pre>
+      </div>
+      <section id="the-carousel">
+        <h2 class="carousel-headline">THE CAROUSEL</h2>
+        <div class="carousel">
+          <div class="carousel-contents">
+            <a class="carousel-content" href="https://www.typescriptlang.org/" target="blank">
+              <img src="./public/ts-logo-512.png" alt="" />
+              <h3 class="carousel-caption">Typescript</h3>
+              <p class="carousel-description">
+                Strongly typed programming language that builds on JavaScript.
+              </p>
+            </a>
+            <a class="carousel-content" href="https://ja.react.dev/" target="blank">
+              <img src="./public/react-logo.svg" alt="" />
+              <h3 class="carousel-caption">React</h3>
+              <p class="carousel-description">
+                The library for web and native user interfaces.
+              </p>
+            </a>
+            <a class="carousel-content" href="https://ja.vuejs.org/" target="blank">
+              <img src="./public/logo.png" alt="" />
+              <h3 class="carousel-caption">Vue</h3>
+              <p class="carousel-description">
+                An approachable, performant and versatile framework for building
+                web user interfaces.
+              </p>
+            </a>
+            <a class="carousel-content" href="https://nuxt.com/" target="blank">
+              <img src="./public/logo-green-black.png" alt="" />
+              <h3 class="carousel-caption">Nuxt.js</h3>
+              <p class="carousel-description">
+                Nuxt is an open source framework that makes web development
+                intuitive and powerful.<br />
+                Create performant and production-grade full-stack web apps and
+                websites with confidence.
+              </p>
+            </a>
+            <a class="carousel-content" href="https://nextjs.org/" target="blank">
+              <img src="./public/nextjs-logotype-light-background.png" alt="" />
+              <h3 class="carousel-caption">Next.js</h3>
+              <p class="carousel-description">
+                Next.js enables you to create high-quality web applications with
+                the power of React components.
+              </p>
+            </a>
+          </div>
+          <button class="left-button">&lt;</button>
+          <button class="right-button">&gt;</button>
+        </div>
+      </section>
+      <div class="source-code">
+        <p class="code-headline">SourceCode</p>
+        <p class="code-caption">HTML</p>
+        <pre class="language-html"><code id="carousel-html"></code></pre>
+        <p class="code-caption">CSS</p>
+        <pre class="language-css"><code id="carousel-css"></code></pre>
+        <p class="code-caption">JavaScript</p>
+        <pre class="language-javascript"><code id="carousel-js"></code></pre>
+      </div>
+      <section id="the-application">
+        <h2 class="application-headline">THE APPLICATION</h2>
+        <p class="application-caption">Coming soon</p>
+      </section>
+      <section id="the-api">
+        <h2 class="api-headline">THE API</h2>
+        <div class="source-code">
+          <p class="code-headline">SourceCode</p>
+          <p class="code-caption">HTML</p>
+          <pre class="language-html"><code id="githubApi-html"></code></pre>
+          <p class="code-caption">CSS</p>
+          <pre class="language-css"><code id="githubApi-css"></code></pre>
+          <p class="code-caption">JavaScript</p>
+          <pre class="language-javascript"><code id="githubApi-js"></code></pre>
+        </div>
+        <div class="total-code">
+          <p class="code-headline">TotalSourceCode</p>
+          <p class="TotalCode-caption">HTML</p>
+          <pre class="language-html"><code id="total-html"></code></pre>
+          <p class="TotalCode-caption">CSS</p>
+          <pre class="language-css"><code id="total-css"></code></pre>
+          <p class="TotalCode-caption">JavaScript</p>
+          <pre class="language-javascript"><code id="total-js"></code></pre>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small>&copy;SENTO Become a developer</small>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+
+</html>
