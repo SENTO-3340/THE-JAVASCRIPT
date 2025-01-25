@@ -40,7 +40,7 @@ export const githubApi = () => {
 
       const lines = fileContent.split('\n');
 
-      function displayApiViewer(elementID,startNum, endNum) {
+      function displayApiViewer(elementID, startNum, endNum) {
 
         const CodeBlock = document.querySelector(`#${elementID}`);
 
@@ -53,20 +53,20 @@ export const githubApi = () => {
       }
 
       if (Path === filePath.html) {
-        displayApiViewer(18, 34, 'hum-html')
-        displayApiViewer(56, 67, 'icon-html')
-        displayApiViewer(77, 98, 'scroll-html')
-        displayApiViewer(108, 156, 'carousel-html')
-        displayApiViewer(170, 190, 'githubApi-html')
-        displayApiViewer(1, 198, 'total-html')
+        displayApiViewer('hum-html',18, 34)
+        displayApiViewer('icon-html',56, 67)
+        displayApiViewer('scroll-html',77, 98)
+        displayApiViewer('carousel-html',108, 156)
+        displayApiViewer('githubApi-html',170, 190)
+        displayApiViewer('total-html',1, 198)
       }
       if (Path === filePath.css) {
-        displayApiViewer(5, 87, 'hum-css')
-        displayApiViewer(103, 144, 'icon-css')
-        displayApiViewer(145, 267, 'scroll-css')
-        displayApiViewer(268, 326, 'carousel-css')
-        displayApiViewer(340, 390, 'githubApi-css')
-        displayApiViewer(1, 399, 'total-css')
+        displayApiViewer('hum-css',5, 87)
+        displayApiViewer('icon-css',103, 144)
+        displayApiViewer('scroll-css',145, 267)
+        displayApiViewer('carousel-css',268, 326)
+        displayApiViewer('githubApi-css',340, 390)
+        displayApiViewer('total-css',1, 399)
       }
       if (Path === filePath.hum) {
         displayApiViewer('hum-js')
