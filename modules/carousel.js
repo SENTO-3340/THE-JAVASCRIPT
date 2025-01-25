@@ -15,9 +15,10 @@ export const carousel = () => {
     const realContent = content.length;
   
     let currentIndex = 1;
-  
+    let contentWidth=content[0].getBoundingClientRect().width;
+    
     function updateCarousel() {
-      const contentWidth = content[0].getBoundingClientRect().width;
+      contentWidth=content[0].getBoundingClientRect().width;
       contents.style.transform = `translateX(-${currentIndex * contentWidth}px)`;
     }
   

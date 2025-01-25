@@ -4,7 +4,12 @@ export const githubApi = () => {
   const filePath = {
     html: 'index.html',
     css: 'style.css',
-    js: 'modules/modules.js'
+    hum: 'modules/hum.js',
+    icon: 'modules/icon.js',
+    scroll: 'modules/scroll.js',
+    carousel: 'modules/carousel.js',
+    api: 'modules/api.js',
+    main: 'main.js',
   };
 
   async function fetchAndDisplayFile(Path) {
@@ -15,16 +20,13 @@ export const githubApi = () => {
       // ↑トークンを使用する場合は以下に切り替える
       // const response = await fetch(url, {
       //   headers: {
-      //     Authorization: `token ${token}`, // 認証ヘッダーを追加
+      //     Authorization: `token ${token}`, // 認証ヘッダーを追
+      // 加
       //   },
       // });
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-
-      if (response.ok) {
-        console.log('OK');
       }
 
       const data = await response.json();
@@ -38,13 +40,12 @@ export const githubApi = () => {
 
       const lines = fileContent.split('\n');
 
-      function displayApiViewer(startNum, endNum, elementID) {
-        const StartLine = startNum;
-        const EndLine = endNum;
-
-        const SelectedLines = lines.slice(StartLine - 1, EndLine).join('\n');
+      function displayApiViewer(elementID,startNum, endNum) {
 
         const CodeBlock = document.querySelector(`#${elementID}`);
+
+
+        const SelectedLines = lines.slice(startNum - 1, endNum).join('\n');
 
         CodeBlock.textContent = SelectedLines;
 
@@ -67,13 +68,23 @@ export const githubApi = () => {
         displayApiViewer(340, 390, 'githubApi-css')
         displayApiViewer(1, 399, 'total-css')
       }
-      if (Path === filePath.js) {
-        displayApiViewer(1, 31, 'hum-js')
-        displayApiViewer(33, 108, 'icon-js')
-        displayApiViewer(110, 142, 'scroll-js')
-        displayApiViewer(144, 206, 'carousel-js')
-        displayApiViewer(208, 298, 'githubApi-js')
-        displayApiViewer(1, 298, 'total-js')
+      if (Path === filePath.hum) {
+        displayApiViewer('hum-js')
+      }
+      if (Path === filePath.icon) {
+        displayApiViewer('icon-js')
+      }
+      if (Path === filePath.scroll) {
+        displayApiViewer('scroll-js')
+      }
+      if (Path === filePath.carousel) {
+        displayApiViewer('carousel-js')
+      }
+      if (Path === filePath.api) {
+        displayApiViewer('githubApi-js')
+      }
+      if (Path === filePath.main) {
+        displayApiViewer('main-js')
       }
 
     } catch (error) {
@@ -84,7 +95,12 @@ export const githubApi = () => {
   function updateAllFiles() {
     fetchAndDisplayFile(filePath.html);
     fetchAndDisplayFile(filePath.css);
-    fetchAndDisplayFile(filePath.js);
+    fetchAndDisplayFile(filePath.hum);
+    fetchAndDisplayFile(filePath.icon);
+    fetchAndDisplayFile(filePath.scroll);
+    fetchAndDisplayFile(filePath.carousel);
+    fetchAndDisplayFile(filePath.api);
+    fetchAndDisplayFile(filePath.main);
   }
 
   updateAllFiles();
