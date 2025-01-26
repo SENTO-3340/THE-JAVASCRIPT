@@ -5,6 +5,22 @@
         font-size: 18px;
         line-height: 50px;
     }
+    
+    .left-button:hover {
+        background-color: none;
+    }
+
+    .right-button:hover {
+        background-color: none;
+    }
+
+    .left-button:active {
+        background-color: #909090;
+    }
+
+    .right-button:active {
+        background-color: #909090;
+    }
 
     .code-caption {
         width: 100vw;
