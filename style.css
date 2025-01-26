@@ -72,6 +72,7 @@ html {
   transform: translateY(-120px);
   opacity: 0;
   transition: 0.5s;
+  pointer-events: none;
 }
 
 .nav-menu {
@@ -100,6 +101,7 @@ html {
 .header-nav.is-active {
   transform: translateY(80px);
   opacity: 100;
+  pointer-events: visible;
 }
 
 #read-me {
