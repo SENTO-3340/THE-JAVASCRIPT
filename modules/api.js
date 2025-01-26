@@ -53,20 +53,20 @@ export const githubApi = () => {
       }
 
       if (Path === filePath.html) {
-        displayApiViewer('hum-html',18, 34)
-        displayApiViewer('icon-html',56, 67)
-        displayApiViewer('scroll-html',77, 98)
-        displayApiViewer('carousel-html',108, 156)
-        displayApiViewer('githubApi-html',170, 190)
-        displayApiViewer('total-html',1, 198)
+        displayApiViewer('hum-html', 18, 34)
+        displayApiViewer('icon-html', 56, 67)
+        displayApiViewer('scroll-html', 77, 98)
+        displayApiViewer('carousel-html', 108, 156)
+        displayApiViewer('githubApi-html', 170, 190)
+        displayApiViewer('total-html', 1, 198)
       }
       if (Path === filePath.css) {
-        displayApiViewer('hum-css',5, 87)
-        displayApiViewer('icon-css',103, 144)
-        displayApiViewer('scroll-css',145, 267)
-        displayApiViewer('carousel-css',268, 326)
-        displayApiViewer('githubApi-css',340, 390)
-        displayApiViewer('total-css',1, 399)
+        displayApiViewer('hum-css', 5, 87)
+        displayApiViewer('icon-css', 103, 144)
+        displayApiViewer('scroll-css', 145, 267)
+        displayApiViewer('carousel-css', 268, 326)
+        displayApiViewer('githubApi-css', 340, 390)
+        displayApiViewer('total-css', 1, 399)
       }
       if (Path === filePath.hum) {
         displayApiViewer('hum-js')
