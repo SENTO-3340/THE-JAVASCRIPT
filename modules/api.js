@@ -3,7 +3,7 @@ export const githubApi = () => {
   const repo = 'THE-JAVASCRIPT';
   const filePath = {
     html: 'index.html',
-    css: 'style.css',
+    css: 'src/style.css',
     hum: 'modules/hum.js',
     icon: 'modules/icon.js',
     scroll: 'modules/scroll.js',
