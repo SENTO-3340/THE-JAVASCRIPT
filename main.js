@@ -13,7 +13,7 @@ githubApi();
 window.addEventListener('resize', () => {
     const readMeDes = document.querySelector('.rm-description');
     if (window.innerWidth < 900) {
-        readMeDes.innerHTML = "このサイトはJavaScriptを”作りながら学ぶ”ために<br>作成したサイトです。<br>JavaScriptの機能を使うためのサイト構築をしており各機能はESModulesを用いて分割しています。<br>また各sectionの最後にGitHub REST APIで<br>取得したsourcecodeを載せています。<br>サイト内にちりばめたJSの機能を体感して楽しんでください!"
+        readMeDes.innerHTML = "このサイトはJavaScriptを作りながら学ぶために<br>作成したサイトです。<br>JavaScriptの機能を使うためのサイト構築をしており各機能はESModulesで分割しています。<br>また各sectionの最後にGitHub REST APIで<br>取得したsourcecodeを載せています。<br>サイト内にちりばめたJSの機能を体感して楽しんでください!"
     } else {
         readMeDes.innerHTML = "このサイトはJavaScriptを”作りながら学ぶ”ために作成したサイトです。<br>JavaScriptの機能を使うためのサイト構築をしており各機能はESModulesを用いて分割しています。<br>また各sectionの最後にGitHub REST APIで取得したsourcecodeを載せています。<br>サイト内にちりばめたJSの機能を体感して楽しんでください!"
     }
