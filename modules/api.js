@@ -61,7 +61,7 @@ export const githubApi = () => {
         displayApiViewer('total-html', 1, 198)
       }
       if (Path === filePath.css) {
-        displayApiViewer('hum-css', 5, 87)
+        displayApiViewer('hum-css', 6, 105)
         displayApiViewer('icon-css', 103, 144)
         displayApiViewer('scroll-css', 145, 267)
         displayApiViewer('carousel-css', 268, 326)
