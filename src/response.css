@@ -1,4 +1,8 @@
 @media(max-width:900px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    
     .rm-description {
         padding-top: 20px;
         text-align: center;
