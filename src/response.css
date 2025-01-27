@@ -27,15 +27,21 @@
 
     }
 
+
+    pre{
+         overflow: auto !important;
+         -webkit-overflow-scrolling: touch !important;
+    }
+
     .source-code pre {
         font-size: 10px;
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
     }
 
     .total-code pre {
         font-size: 10px;
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
     }
 
