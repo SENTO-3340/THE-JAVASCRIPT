@@ -448,6 +448,7 @@ html {
 
 pre{
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .source-code pre {
