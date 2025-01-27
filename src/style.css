@@ -446,6 +446,10 @@ html {
   font-weight: bold;
 }
 
+pre{
+  overflow: auto;
+}
+
 .source-code pre {
   position: relative;
   left: 50%;
