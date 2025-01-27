@@ -446,11 +446,6 @@ html {
   font-weight: bold;
 }
 
-pre{
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 .source-code pre {
   position: relative;
   left: 50%;
