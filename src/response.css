@@ -11,11 +11,11 @@
     }
     
     .left-button:hover {
-        background-color: none;
+        background-color: transparent;
     }
 
     .right-button:hover {
-        background-color: none;
+        background-color: transparent;
     }
 
     .code-caption {
