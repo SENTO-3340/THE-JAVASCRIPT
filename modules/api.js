@@ -1,4 +1,4 @@
-すxport const githubApi = () => {
+export const githubApi = () => {
   const username = 'SENTO-3340';
   const repo = 'THE-JAVASCRIPT';
   const filePath = {
