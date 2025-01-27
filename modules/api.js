@@ -1,4 +1,4 @@
-export const githubApi = () => {
+すxport const githubApi = () => {
   const username = 'SENTO-3340';
   const repo = 'THE-JAVASCRIPT';
   const filePath = {
@@ -66,7 +66,7 @@ export const githubApi = () => {
         displayApiViewer('scroll-css', 174, 322)
         displayApiViewer('carousel-css', 324, 393)
         displayApiViewer('githubApi-css', 411, 467)
-        displayApiViewer('total-css', 1, 399)
+        displayApiViewer('total-css', 1, 478)
       }
       if (Path === filePath.hum) {
         displayApiViewer('hum-js')
