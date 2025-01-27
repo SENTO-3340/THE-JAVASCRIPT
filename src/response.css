@@ -1,7 +1,6 @@
 @media(max-width:900px) {
     html,body{
         overflow-x: hidden;
-        height: 100%;
     }
     
     .rm-description {
